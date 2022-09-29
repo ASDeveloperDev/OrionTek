@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClientActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tvFechaUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tvFechaAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tvIdAddC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:visibility="invisible"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardClientAddC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="2dp"
+                app:cardElevation="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    app:counterEnabled="true"
+                    app:counterMaxLength="35">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EdClientAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawableStart="@drawable/ic_person"
+                        android:hint="Cliente"
+                        android:inputType="textPersonName|textCapWords|textAutoCorrect"
+                        android:maxLength="35"
+                        android:padding="10dp"
+                        tools:ignore="MissingConstraints"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardTelAddC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="2dp"
+                app:cardElevation="5dp"
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+
+
+                    app:counterEnabled="true"
+                    app:counterMaxLength="9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EdTelefonoAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telefono"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:padding="10dp"
+                        tools:ignore="MissingConstraints"
+
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/ic_tel"
+                        android:drawableStart="@drawable/ic_tel"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardFechaNacAddC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="2dp"
+                app:cardElevation="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EdFechaNacAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/ic_date"
+                        android:drawableStart="@drawable/ic_date"
+
+                        android:drawableEnd="@drawable/ic_flecha_abajo"
+                        android:drawableRight="@drawable/ic_flecha_abajo"
+                        android:hint="Fecha de nacimiento"
+                        android:inputType="textPersonName|textCapWords|textAutoCorrect"
+                        android:maxLength="8"
+                        android:padding="10dp"
+                        tools:ignore="MissingConstraints"
+
+                        android:editable="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"   />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardEmailAddC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="2dp"
+                app:cardElevation="5dp"
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EdEmailAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawableStart="@drawable/ic_email"
+                        android:hint="Email"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLength="30"
+                        android:padding="10dp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardDirAddC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="2dp"
+                app:cardElevation="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/EdDirAddC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:drawablePadding="8dp"
+                            android:drawableLeft="@drawable/ic_location"
+                            android:drawableStart="@drawable/ic_location"
+
+                            android:drawableEnd="@drawable/ic_flecha_abajo"
+                            android:drawableRight="@drawable/ic_flecha_abajo"
+                            android:hint="Direccion"
+                            android:inputType="textPersonName|textCapWords|textAutoCorrect"
+                            android:maxLength="35"
+                            android:padding="10dp"
+                            tools:ignore="MissingConstraints"
+
+                            android:editable="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"   />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupDirAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:singleSelection="true"
+                        >
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipAllAddC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ALL"
+                            android:visibility="gone"
+                            />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardNotaC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:padding="4dp"
+                app:cardElevation="5dp"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="200">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EdNotaAddC"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:drawableStart="@drawable/ic_note"
+                        android:drawableLeft="@drawable/ic_note"
+                        android:gravity="start|top"
+                        android:hint="Notas"
+                        android:inputType="textMultiLine|textCapWords|textAutoCorrect"
+                        android:maxLength="200"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/BtAddClientAddC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_done"
+                app:fabSize="normal"
+                tools:ignore="DuplicateIds,MissingConstraints" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

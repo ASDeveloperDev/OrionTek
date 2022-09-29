@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_person"/>
+
+            <TextView
+                android:id="@+id/tvNomClientDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="client"
+                android:textStyle="bold"
+                tools:ignore="UseCompatTextViewDrawableXml"
+               />
+        </LinearLayout>
+
+        <!--
+          <androidx.cardview.widget.CardView
+              android:id="@+id/CardNomClientDet"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/CardReportIvDetClient"
+              android:layout_marginTop="@dimen/margin10dp"
+              android:layout_marginBottom="@dimen/margin5dp"
+              android:padding="4dp"
+              app:cardElevation="@dimen/margin5dp"
+              tools:ignore="MissingConstraints"
+              android:backgroundTint="@color/ColorCard">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margin10dp"
+                  android:layout_marginTop="@dimen/margin10dp"
+                  android:layout_marginRight="@dimen/margin10dp"
+                  android:layout_marginBottom="@dimen/margin10dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/tvNomClientDet"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:drawableStart="@drawable/ic_client"
+                      android:drawableLeft="@drawable/ic_client"
+                      android:drawablePadding="8dp"
+                      android:hint="@string/Client"
+                      android:textSize="@dimen/textSize"
+                      app:drawableLeftCompat="@drawable/ic_client"
+                      tools:ignore="UseCompatTextViewDrawableXml"
+                      android:textColor="@color/colorDetText"/>
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+  -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardTelClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="1dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTelClientDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:hint="Telefono"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardDocClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="2dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFechaNacClientDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha nacimiento"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    tools:ignore="UseCompatTextViewDrawableXml"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardDirClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="1dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvDirClientDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:hint="Direcciones"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    tools:ignore="UseCompatTextViewDrawableXml"
+                    />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupDirDet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAllDet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALL"
+                        />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardEmailClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="2dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEmailClientDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    tools:ignore="UseCompatTextViewDrawableXml"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardNotaClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="1dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNotaClientDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_note"
+                    android:drawableLeft="@drawable/ic_note"
+                    android:drawablePadding="8dp"
+                    android:hint="Notas"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    tools:ignore="UseCompatTextViewDrawableXml"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardDateClientDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardReportIvDetClient"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="2dp"
+            android:padding="4dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <LinearLayout
+                android:id="@+id/tvLinearTitleDetClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDateDetClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="mie. 11 de Mayo 2021"
+                    app:drawableStartCompat="@drawable/ic_person"
+                    app:drawableLeftCompat="@drawable/ic_person"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/BtAceptarDetClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
